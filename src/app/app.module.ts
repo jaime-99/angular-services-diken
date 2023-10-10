@@ -1,17 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app.routing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './theme/components/footer/footer.component';
+import { MatIconModule } from '@angular/material/icon';
+import { PagesComponentComponent } from './pages/pages-component/pages-component.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent,
+    PagesComponentComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule
+
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

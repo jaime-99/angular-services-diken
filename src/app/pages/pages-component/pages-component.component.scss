@@ -1,0 +1,38 @@
+.main{
+  min-height: 400px;
+  min-height: calc(100vh - 288px);
+  padding: 16px;
+  box-sizing: border-box;
+}
+.sidenav{
+  width: 250px;
+  padding: 8px 16px;
+  position: fixed;
+  .close{
+      margin-left: 178px;
+  }
+  .divider{
+      margin: 8px 0;
+  }
+}
+.cart-items-count{
+  position: absolute;
+  top: -3px;
+  left: 26px;
+  background: #f44336;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+
+@media (max-width: 767px) {
+/* Selector para el input de búsqueda */
+input[name="searchText2"] {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  font-size: 13px; /* Tamaño de fuente personalizado para dispositivos móviles */
+  padding: 0 300px 0 12px ; /* Espaciado interior personalizado */
+}
+}
