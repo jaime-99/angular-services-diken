@@ -11,6 +11,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { HttpClientModule } from '@angular/common/http';
+import { SidenavComponent } from './theme/components/sidenav/sidenav.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 
 
@@ -19,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     FooterComponent,
     PagesComponentComponent,
+    SidenavComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatToolbarModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSidenavModule,
+    MatListModule
 
 
 
