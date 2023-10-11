@@ -1,14 +1,36 @@
-<!-- <p>pages-component works!</p> -->
+
+
+
+
+<!--TODO esto es para el menu header  -->
+
+<mat-toolbar color="primary" id="header-toolbar">
+    <mat-toolbar-row fxLayoutAlign="space-between center" class="top-toolbar theme-container">
+      <span fxHide="false" fxHide.gt-sm>
+        <!-- <button mat-button (click)="sidenav.toggle()" class="sidenav-toggle">
+          <mat-icon>menu</mat-icon>
+        </button> -->
+      </span>
+      <span fxShow="false" fxShow.gt-xs fxLayoutAlign="center center"> </span>
+      <!-- <app-top-menu></app-top-menu> -->
+    </mat-toolbar-row>
+    <mat-toolbar-row fxLayoutAlign="space-between center" class="logo-toolbar theme-container">
+
+      <div fxFlex="20">
+        <img [src]="'/assets/Images/diken_azul.png'" width="150"
+          style="float:left ;margin-left: 10px;margin-right: 10px;">
+        <!-- <a class="logo2" routerLink="/" (click)="closeSubMenus()">IntegraNet Diken</a> -->
+      </div>
+      </mat-toolbar-row>
+      </mat-toolbar>
 
 
 
 <div class="theme-container main">
-  <!-- con el router outlet podemos ver la pagina de cada componente -->
+  <!--TODO con el router outlet podemos ver la pagina de cada componente -->
   <router-outlet></router-outlet>
 </div>
 
 
 
 <app-footer></app-footer>
-
-
