@@ -45,7 +45,7 @@ export class SignInComponent  implements OnInit{
       // El formulario es válido, puedes acceder a los valores
       const formData = this.loginForm.value;
       console.log('Formulario enviado:', formData);
-      this.router.navigate(['/pase']); // esto es para que me redireccione a ventas cuando inicio sesion
+      this.router.navigate(['/inicio']); // esto es para que me redireccione a ventas cuando inicio sesion
   }
 
 }

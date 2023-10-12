@@ -18,6 +18,7 @@ import { AppSettings } from './app.settings';
 import { SupportService } from './support.service';
 import {MatButtonModule} from '@angular/material/button';
 import { TopMenuComponent } from './theme/components/top-menu/top-menu.component';
+import { PerfilComponent } from './pages/perfil/perfil.component';
 
 
 
@@ -29,7 +30,7 @@ import { TopMenuComponent } from './theme/components/top-menu/top-menu.component
     PagesComponentComponent,
     SidenavComponent,
     TopMenuComponent,
-    // InicioComponent,
+
   ],
   imports: [
     BrowserModule,

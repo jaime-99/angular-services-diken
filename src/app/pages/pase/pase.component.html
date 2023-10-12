@@ -8,13 +8,12 @@
     <div fxLayout="row" class="user-details">
       <!-- <img src="assets/user-avatar.jpg" alt="User Avatar" class="avatar"> -->
       <div class="user-info" fxFlex="45">
-        <p><strong>Usuario: </strong>{{usuario}} </p>
-        <p><strong>correo: </strong> {{correo}} </p>
-        <p><strong>Numero de empleado: </strong> {{numeroDeEmpleado}} </p>
+        <p><strong>Usuario: </strong> {{numeroDeEmpleado}} {{usuario}} </p>
         <p><strong>Jefe: </strong> Martin</p>
+        <p><strong>Fecha de ingreso: </strong> {{fechaAlta}} </p>
       </div>
       <div fxFlex="40" fxLayoutAlign="">
-        <button mat-raised-button color="primary" (click)="abrirDialogo()"> Generar pase de salida</button>
+        <button mat-raised-button color="primary" (click)="abrirDialogo()"> Generar pase</button>
       </div>
     </div>
   </div>

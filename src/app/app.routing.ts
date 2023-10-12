@@ -18,6 +18,7 @@ const routes: Routes = [
     component: PagesComponentComponent, children: [
         { path: 'pase', loadChildren: () => import('./pages/pase/pase.module').then(m => m.PaseModule) },
         { path: 'inicio', loadChildren: () => import('./pages/inicio/inicio.module').then(m => m.InicioModule) },
+        { path: 'perfil', loadChildren: () => import('./pages/perfil/perfil.module').then(m => m.PerfilModule) },
     ]
   },
 

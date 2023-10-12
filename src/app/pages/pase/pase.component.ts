@@ -17,6 +17,7 @@ export class PaseComponent implements OnInit {
   numeroDeEmpleado = 0;
   correo = ''
   empresa = ''
+  fechaAlta= ''
 
 
   ngOnInit(): void {
@@ -27,6 +28,8 @@ export class PaseComponent implements OnInit {
     this.empresa = userauth.empresa
     this.usuario = userauth.data.usuario
     this.numeroDeEmpleado = userauth.data.numero_empleado
+    this.fechaAlta = userauth.data.fecha_alta
+
     console.log(userauth)
     // console.log(userauth.data)
   }
