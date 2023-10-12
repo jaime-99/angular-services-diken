@@ -40,7 +40,7 @@ export class SignInComponent  implements OnInit{
 
       this.supportService.GetLoginAuth("jose.gomez", "897f1c962a93c0ee5c3e6bee455c2959").subscribe((res)=>{
 
-
+        console.log(res)
       })
       // El formulario es válido, puedes acceder a los valores
       const formData = this.loginForm.value;

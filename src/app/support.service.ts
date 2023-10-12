@@ -30,15 +30,12 @@ export class SupportService {
       resp.ok;
       this._usuario={
         id:resp.id,
-        // Nombre:resp.Nombre,
         Usuario:resp.usuario,
         email:resp.email,
         message:resp.message,
         ok:resp.ok,
-        // Departamento:resp.Departamento,
-        // EsServicio:resp.EsServicio,
-        // DepartamentoId:resp.DepartamentoId,
-        // data:resp.data,
+        empresa:resp.empresa,
+        data:resp.data,
         // Imagen:resp.Imagen,
         // BigDataUsuarioId:resp.BigDataUsuarioId,
         // Apellidos:resp.Apellidos

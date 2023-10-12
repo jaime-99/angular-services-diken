@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaseComponent } from './pase.component';
+import { TopMenuComponent } from './top-menu.component';
 
-describe('PaseComponent', () => {
-  let component: PaseComponent;
-  let fixture: ComponentFixture<PaseComponent>;
+describe('TopMenuComponent', () => {
+  let component: TopMenuComponent;
+  let fixture: ComponentFixture<TopMenuComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PaseComponent]
+      declarations: [TopMenuComponent]
     });
-    fixture = TestBed.createComponent(PaseComponent);
+    fixture = TestBed.createComponent(TopMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

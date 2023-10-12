@@ -10,10 +10,15 @@ import { PagesComponentComponent } from './pages/pages-component/pages-component
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { SidenavComponent } from './theme/components/sidenav/sidenav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { AppSettings } from './app.settings';
+import { SupportService } from './support.service';
+import {MatButtonModule} from '@angular/material/button';
+import { TopMenuComponent } from './theme/components/top-menu/top-menu.component';
+
 
 
 
@@ -23,6 +28,7 @@ import { MatListModule } from '@angular/material/list';
     FooterComponent,
     PagesComponentComponent,
     SidenavComponent,
+    TopMenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,13 +39,19 @@ import { MatListModule } from '@angular/material/list';
     FlexLayoutModule,
     HttpClientModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule
+
 
 
 
 
     ],
-  providers: [],
+    providers: [
+      AppSettings,
+      SupportService,
+
+         ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

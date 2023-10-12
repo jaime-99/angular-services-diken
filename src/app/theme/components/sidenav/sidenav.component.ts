@@ -9,21 +9,18 @@ import { MatSidenav } from '@angular/material/sidenav';
 })
 export class SidenavComponent implements OnInit{
 
+  showFiller = false
+
   constructor( ){
 
   }
 
-  @ViewChild('sidenav')
-  sidenav!: MatSidenav; // Esto obtiene una referencia al mat-sidenav
 
 
 
   ngOnInit(){
 
-    if (this.sidenav) {
-      // La referencia a 'sidenav' estará disponible después de que la vista se inicialice
-      // Ahora puedes usar this.sidenav.toggle() u otras funciones de MatSidenav
-    }
+
 
   }
 }

@@ -11,26 +11,34 @@
           <mat-icon>menu</mat-icon>
         </button> -->
       </span>
+
       <span fxShow="false" fxShow.gt-xs fxLayoutAlign="center center"> </span>
       <!-- <app-top-menu></app-top-menu> -->
     </mat-toolbar-row>
     <mat-toolbar-row fxLayoutAlign="space-between center" class="logo-toolbar theme-container">
 
       <div fxFlex="20">
+
+            <!-- <button mat-icon-button (click)="toggleSidenav()">
+              <mat-icon>menu</mat-icon>
+            </button> -->
+            <!-- Contenido de la página principal aquí -->
         <img [src]="'/assets/Images/diken_azul.png'" width="150"
-          style="float:left ;margin-left: 10px;margin-right: 10px;">
-        <!-- <a class="logo2" routerLink="/" (click)="closeSubMenus()">IntegraNet Diken</a> -->
+        style="float:left ;margin-left: 10px;margin-right: 10px;">
+
       </div>
       </mat-toolbar-row>
+
       </mat-toolbar>
 
-      <app-sidenav></app-sidenav>
 
 
 
 <div class="theme-container main">
   <!--TODO con el router outlet podemos ver la pagina de cada componente -->
   <router-outlet></router-outlet>
+  <!-- <app-sidenav></app-sidenav> -->
+
 </div>
 
 

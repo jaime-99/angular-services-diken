@@ -3,15 +3,18 @@
 <!-- user-info.component.html -->
 
 <div fxLayout="column" fxLayoutAlign="center center">
-  <div class="user-card">
+  <div class="user-card" fxFlex="100%">
     <h2>Informacion del usuario</h2>
-    <div class="user-details">
+    <div fxLayout="row" class="user-details">
       <!-- <img src="assets/user-avatar.jpg" alt="User Avatar" class="avatar"> -->
-      <div class="user-info">
-        <p><strong>Numero de Empleado:</strong> 11122</p>
-        <p><strong>Usuario:</strong> john.doe@example.com</p>
-        <p><strong>Fecha de ingreso:</strong> 11/10/2023</p>
+      <div class="user-info" fxFlex="45">
+        <p><strong>Usuario:</strong>{{usuario}} </p>
+        <p><strong>correo:</strong> {{correo}} </p>
+        <p><strong>Numero de empleado:</strong> {{numeroDeEmpleado}} </p>
         <p><strong>Jefe:</strong> Martin</p>
+      </div>
+      <div fxFlex="40" fxLayoutAlign="">
+        <button mat-raised-button color="primary" (click)="abrirDialogo()"> Generar pase de salida</button>
       </div>
     </div>
   </div>

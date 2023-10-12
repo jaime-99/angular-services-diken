@@ -1,4 +1,13 @@
 
 
+<div id="app" class="h-100 app green"
+
+
+
+                [ngClass]="settings.theme"
+                [class.main-toolbar-fixed]="settings.mainToolbarFixed"
+                [dir]="(settings.rtl) ? 'rtl' : 'ltr'">
+
+
 <router-outlet></router-outlet>
 
