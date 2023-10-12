@@ -25,7 +25,7 @@ export class PaseComponent implements OnInit {
 
     this.correo = userauth.email
     this.empresa = userauth.empresa
-    this.usuario = userauth.Usuario
+    this.usuario = userauth.data.usuario
     this.numeroDeEmpleado = userauth.data.numero_empleado
     console.log(userauth)
     // console.log(userauth.data)

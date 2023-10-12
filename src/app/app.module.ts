@@ -29,6 +29,7 @@ import { TopMenuComponent } from './theme/components/top-menu/top-menu.component
     PagesComponentComponent,
     SidenavComponent,
     TopMenuComponent,
+    // InicioComponent,
   ],
   imports: [
     BrowserModule,

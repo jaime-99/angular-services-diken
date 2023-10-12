@@ -17,15 +17,13 @@ const routes: Routes = [
     path: '',
     component: PagesComponentComponent, children: [
         { path: 'pase', loadChildren: () => import('./pages/pase/pase.module').then(m => m.PaseModule) },
+        { path: 'inicio', loadChildren: () => import('./pages/inicio/inicio.module').then(m => m.InicioModule) },
     ]
   },
 
 
   //y este es para las rutas que no quiero que se vea el footer o otras cosas compartidas
   { path:'sign-in',loadChildren:()=>import('./pages/sign-in/sign-in.module').then(m=>m.SignInModule)},
-
-  { path:'pase',loadChildren:()=>import('./pages/pase/pase.module').then(m=>m.PaseModule)},
-
 
 ];
 

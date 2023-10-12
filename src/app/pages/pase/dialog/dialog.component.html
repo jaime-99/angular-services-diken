@@ -1,16 +1,34 @@
 <p>dialog works!</p>
 
 
-<form>
-  <mat-form-field>
-    <input matInput placeholder="Nombre">
-  </mat-form-field>
+<form [formGroup]="datosPase" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <mat-form-field>
+    <!-- <label for="username">Usuario:</label>
+    <input type="text" id="username" formControlName="username"> -->
+    <mat-label>Fecha</mat-label>
+    <input matInput placeholder="12/10/2023" formControlName="fecha" required>
+    <!-- <mat-error *ngIf="datosPase.invalid">{{getErrorMessage()}}</mat-error> -->
+    </mat-form-field>
+  </div>
 
-  <mat-form-field>
-    <input matInput placeholder="Correo electrónico">
-  </mat-form-field>
+  <div class="form-group">
+    <mat-form-field>
+    <mat-label>Tipo</mat-label>
+    <input matInput placeholder="Salida" formControlName="tipo" required>
+    <!-- <mat-error *ngIf="datosPase.invalid">{{getErrorMessage()}}</mat-error> -->
+    </mat-form-field>
 
-  <!-- Otros campos de formulario -->
+  </div>
+  <div class="form-group">
+    <mat-form-field>
+    <mat-label>Hora</mat-label>
+    <input matInput placeholder="01:29 P.M" formControlName="hora" required>
+    <!-- <mat-error *ngIf="datosPase.invalid">{{getErrorMessage()}}</mat-error> -->
+    </mat-form-field>
 
-  <button mat-raised-button color="primary">Guardar</button>
+  </div>
+
+  <button mat-raised-button color="primary" type="submit">Guardar</button>
+
 </form>

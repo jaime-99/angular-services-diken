@@ -2,7 +2,7 @@
 <mat-card class="login-card custom-card">
   <div fxLayout="row " fxLayoutAlign="center center" class="login-container">
 
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+<form [formGroup]="loginForm"  (ngSubmit)="onSubmit()">
   <div class="form-group">
     <mat-form-field>
     <!-- <label for="username">Usuario:</label>
@@ -21,6 +21,10 @@
     </mat-form-field>
 
   </div>
+
+  <!-- <div class="image-container">
+    <img src="/assets/Images/diken_azul.png" alt="Imagen" width="100" height="100">
+  </div> -->
 
   <button mat-raised-button color="primary" type="submit">Iniciar Sesión</button>
 

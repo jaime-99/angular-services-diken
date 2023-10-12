@@ -9,18 +9,22 @@ import { MatSidenav } from '@angular/material/sidenav';
 })
 export class SidenavComponent implements OnInit{
 
-  showFiller = false
-
   constructor( ){
 
   }
 
-
-
+  @ViewChild('sidenav') sidenav: MatSidenav | undefined;
 
   ngOnInit(){
-
-
+    if (this.sidenav) {
+      this.sidenav.open();
+    }
 
   }
+
+  toggleSidenav() {
+    if(this.sidenav)
+    this.sidenav.toggle();
+  }
+
 }
